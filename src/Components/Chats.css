@@ -614,6 +614,13 @@ background: slateblue;
 
   
 }
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .message > span
+ {
+ color: blue;
+ font-weight: bold;
+
+  
+}
 
 .chat-wrapper > section > .contents > .top> .top-right,
 .chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right,
@@ -662,6 +669,19 @@ background: slateblue;
     }
 /* Mobile screen */
 @media screen and (max-width:425px) {
+
+    .chat-wrapper >  .reply-wrapper >div > .list > section > .contents > .top> .top-left > .you,
+    .chat-wrapper >  .reply-wrapper >div > .last-list > section > .contents > .top> .top-left > .you
+     {
+        color: white;
+        padding: 0px 5px;
+        border-radius: 5px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
 
      .modal  {
         width: 50%;
