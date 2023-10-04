@@ -12,12 +12,12 @@ const Chats = () => {
 const [showReply, setShowReply] = useState(false);
 const [showReply2, setShowReply2] = useState(false);
 const [showReply3, setShowReply3] = useState(false);
+const [background, setbackground] = useState(false);
 
 
 
 const [isLiked, updateLike] = useState(true);
   const [impression, setImpression] = useState(Math.floor(Math.random() * 100));
-  const [background, setbackground] = useState(false);
 
   const incImpressions = () => {
     if(isLiked) {
@@ -39,9 +39,6 @@ const handleClick = () => {
     setShowReply(!showReply)
 }
 
-const handleClick3 = () => {
-    setShowReply3(!showReply3)
-}
 
 
 
