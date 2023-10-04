@@ -118,7 +118,7 @@ background = {background} setbackground = {setbackground}
  decImpressions={decImpressions}/>
 
 
-<div class="attribution">
+<div className="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://godspowerogbudhu.netlify.app/">Gp</a>.
     </div>

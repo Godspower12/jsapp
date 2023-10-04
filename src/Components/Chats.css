@@ -436,6 +436,29 @@ background: slateblue;
     display: none;
 }
 /* Desktop screen */
+
+@media screen and (max-width: 1600px) {
+    .chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form,
+    .chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form 
+    {
+        width: 100%;
+       
+    }
+ 
+    .chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form > textarea,
+.chat-wrapper > .reply-wrapper >   .reply-section > .reply-contents > form > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-content > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-content > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > form> textarea
+{
+    width: 100%;
+
+} 
+}
+
+
 @media screen and (max-width: 1440px) {
     .App {
         background: rgb(231, 231, 231);
