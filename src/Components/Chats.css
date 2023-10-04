@@ -1,0 +1,807 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-wrapper > .attribution {
+    font-size: 8px;
+}
+.App {
+    height: 100vh;
+    background: rgb(231, 231, 231);
+} 
+.chat-wrapper,
+.chat-wrapper > .reply-wrapper,
+.chat-wrapper > .reply-wrapper > div > .list,
+.chat-wrapper  >.chat2,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep,
+.chat-wrapper > .chat2 > .chat2-reply
+ {
+    background: rgb(231, 231, 231);
+    height: auto;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+.chat-wrapper > section,
+.chat-wrapper > .reply-wrapper >  div > .list > section,
+.chat-wrapper > .reply-wrapper >  div > .last-list > section,
+ .chat-wrapper > .reply-wrapper > .reply-section, 
+.chat-wrapper >.chat2 > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section, 
+.chat-wrapper > .reply-wrapper >  .reply-section, 
+.chat-wrapper > .reply-section, 
+.chat-wrapper >.reply-wrapper >  .chat2-reply {
+    padding: 15px 15px;
+    font-size: 13px;
+    display: flex;
+    margin-left: 25%;
+    background: white;
+    width: 50%;
+    margin-bottom: 5px;
+    border: 5px;
+}
+
+
+
+
+.chat-wrapper > .reply-wrapper > div > .list > section,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > section,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section
+{
+    margin-left:28% ;
+}
+
+
+.chat-wrapper > .reply-wrapper >  div > .list > section >.contents > span,
+.chat-wrapper > .reply-wrapper >  div > .last-list > section >.contents > span
+ {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+.chat-wrapper >.reply-wrapper > div > .list > section > .contents,
+.chat-wrapper >.reply-wrapper > div > .last-list > section > .contents
+ {
+    width: 100%;
+    
+}
+
+
+.chat-wrapper > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .list > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .impressions,
+.chat-wrapper > .chat2 > section > .impressions,
+.chat-wrapper > .chat2 > section > .mobile-footer > .impressions,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .impressions
+
+ {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: blue;
+    height: 10%;
+    font-weight: bolder;
+    background: #ccccdf;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.chat-wrapper > section > .impressions > .inc, .dec,
+.chat-wrapper > .reply-wrapper > div > .list > section > .impressions > .inc, .dec,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .impressions > .inc, .dec,
+.chat-wrapper > .chat> section > .impressions > .inc, .dec, 
+.chat-wrapper > .chat2> section > .impressions > .inc, .dec ,
+.chat-wrapper >  .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .impressions > .inc
+
+{
+  cursor: pointer;
+  font-size: 15px;
+}
+.chat-wrapper > section > .contents > .top,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top,
+.chat-wrapper > .chat2 > section > .contents > .top,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper >.chat2ExtRep > section > .contents > .top
+ {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.chat-wrapper > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-left,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-left
+ {
+    display: flex;
+ width: 50%;   
+}
+
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left ,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left 
+{
+    display: flex;
+    width: 60%;
+}
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left > .username, 
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left > .username 
+{
+   font-weight: bolder;
+   margin-right: 5px;
+}
+.chat-wrapper >  .reply-wrapper >div > .list > section > .contents > .top> .top-left > .you,
+.chat-wrapper >  .reply-wrapper >div > .last-list > section > .contents > .top> .top-left > .you
+ {
+    background: blue;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.chat-wrapper > section > .contents > .top> .top-right,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right,
+.chat-wrapper >.chat2> section > .contents > .top> .top-right, 
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-right 
+{
+    color: blue; 
+    font-weight: bolder;
+}
+.chat-wrapper > section > .contents > .top> .top-right> span,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-right> span,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-right> span,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-right> span
+ {
+   cursor: pointer; 
+}
+
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right
+{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right> span,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right> span
+ {
+    cursor: pointer; 
+
+}
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right> .delete,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right> .delete 
+{ 
+    color: red;
+
+}
+
+
+.chat-wrapper > section > .contents > .top> .top-right> span:hover,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-right> span:hover, 
+.chat-wrapper > .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-right> span:hover 
+{
+   cursor: pointer; 
+   color: slateblue; 
+}
+.chat-wrapper > section > .contents > .top> .top-left > img,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left > img,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left > img,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-left > img ,
+.chat-wrapper > .chat2 > .chat2-reply > section > .contents > .top> .top-left > img, 
+.chat-wrapper > .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-left > img ,
+.chat-wrapper > .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > .chat2-reply > section > .contents > .top> .top-left > img 
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chat-wrapper > section > .contents > .top> .top-left > .username,
+.chat-wrapper > .chat2> section > .contents > .top> .top-left > .username,
+.chat-wrapper > .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-left > .username 
+{
+    margin-right: 10px;
+    font-weight: bolder;
+}
+.chat-wrapper > section > .contents > .message,
+.chat-wrapper > .chat2> section > .contents > .message,
+.chat-wrapper > .reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .message
+{
+   text-align: left;
+}
+.chat-wrapper > .chat2> .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .message > span
+{
+  color: blue;
+  font-weight: bolder;
+}
+
+/* reply */
+
+
+.chat-wrapper > .reply-wrapper > .reply-section >.reply-content,
+.chat-wrapper > .reply-wrapper > .reply-section >.reply-contents,
+.chat-wrapper > .reply-wrapper > .reply-section > .reply-contents > form,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep,
+.chat-wrapper > .reply-wrapper> .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section > .reply-contents 
+{
+    display: flex;
+    width: 100%;
+
+}
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-contents> form {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content> img,
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-contents> img,
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-contents> form > img,
+.chat-wrapper > .reply-wrapper >  .update-section > .reply-content> img,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents> img,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> img,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form > img
+{
+height: 30px;
+width: 30px;
+border-radius: 50%;
+margin-right: 10px;
+}
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form > textarea,
+.chat-wrapper > .reply-wrapper >   .reply-section > .reply-contents > form > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > form> textarea
+{
+margin-right: 10px;
+padding: 10px 10px;
+border-radius: 5px;
+}
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form 
+{
+    display: flex;
+}
+.chat-wrapper > .reply-wrapper > .reply-section > .reply-content >form > button,
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-contents >form > button,
+.chat-wrapper > .chat2 .reply-section > .reply-contents> button,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> button,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form > button
+{
+background: blue;
+font-size: 12px;
+height: 35px;
+width: 80px;
+padding: 10px 15px;
+border-radius: 5px;
+border: none;
+color: white;
+}
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content> form > button:hover,
+.chat-wrapper > .reply-wrapper > .reply-section > .reply-contents> form > button:hover,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents> button:hover,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section > .reply-contents> button:hover,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section > .reply-contents> form > button:hover
+{
+cursor: pointer;
+background: slateblue;
+}
+
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper,
+.chat-wrapper > .reply-wrapper  > .chat2ExtRep-wrapper
+  {
+    display: flex;
+    width: 100%;
+}
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper > .line {
+    width: 20px;
+    height: auto;
+    background: rgb(146, 145, 145);
+}
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper > .chat2ExtRep > section,
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section
+ {
+    width: 100%;
+    margin-right: -40px;
+    
+}
+
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section > .reply-contents
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section > .reply-contents
+{
+    width: 100%;
+}
+
+.chat-wrapper > .chat2 > .chat2ExtRep-wrapper {
+    padding: 15px 15px;
+    font-size: 13px;
+    display: flex;
+    width: 50%;
+    margin-bottom: 5px;
+    margin-top: -20px;
+    border: 5px;
+}
+
+.list,
+.last-list
+ {
+    list-style: none ;
+    display: flex;
+}
+.list > button {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+.list > .reply-list {
+    border: none;
+}
+
+.list > img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.modal {
+    background: white;
+    width: 40%;
+    position: fixed;
+    margin-left: 30%;
+    top: 25%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    animation: slideDown 1s;
+    
+}
+
+@keyframes slideDown {
+    from {
+        transform : translateY(-100%)
+    }
+    to {
+        transform: translateY(0%)
+    }
+}
+.modal > h2, .modal > p {
+    color: rgb(133, 132, 132);
+}
+
+.modal > p {
+   text-align: left;
+}
+.modal > .button {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+.modal  > .button > .delete-btn {
+    /* margin-right: 10px; */
+    background: red;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal >  .button > .delete-btn:hover,
+.modal > .button > .cancel-btn:hover
+{
+    transform: scale(1.1);
+    transition: all 500ms ease-in;
+}
+.modal > .button > .cancel-btn {
+    margin-right: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.background {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.mobile-footer {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+/* Desktop screen */
+@media screen and (max-width: 1440px) {
+    .App {
+        background: rgb(231, 231, 231);
+    } 
+
+    .chat-wrapper > section > .impressions,
+    .chat-wrapper > .reply-wrapper > div > .list > section > .impressions,
+    .chat-wrapper > .reply-wrapper > div > .last-list > section > .impressions,
+    .chat-wrapper > .chat2 > section > .impressions,
+    .chat-wrapper > .chat2 > section > .mobile-footer > .impressions,
+    .chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .impressions
+    
+     {
+      display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: blue;
+        height: 10%;
+        font-weight: bolder;
+        background: #ccccdf;
+        margin-right: 15px;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+
+
+
+
+
+.chat-wrapper > section,
+.chat-wrapper > .reply-wrapper >  div > .list > section,
+.chat-wrapper > .reply-wrapper >  div > .last-list > section,
+ .chat-wrapper > .reply-wrapper > .reply-section, 
+.chat-wrapper >.chat2 > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section, 
+.chat-wrapper > .reply-wrapper >  .reply-section, 
+.chat-wrapper > .reply-section, 
+.chat-wrapper >.reply-wrapper >  .chat2-reply
+{
+    width: 70%;
+    margin-left: 15%;
+};
+.chat-wrapper >.reply-wrapper > div > .list > section > .contents,
+.chat-wrapper >.reply-wrapper > div > .last-list > section > .contents
+ {
+    width: 100%;
+    
+}
+
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form 
+{
+    width: 100%;
+   
+}
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form > textarea,
+.chat-wrapper > .reply-wrapper >   .reply-section > .reply-contents > form > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > form> textarea
+{
+    width: 100%;
+
+}
+}
+
+
+/* laptop screen */
+@media screen and (max-width: 1024px) {
+    .modal > .button {
+        margin-left: 25%;
+    }
+    .modal  {
+        width: 50%;
+    margin-left: 20%;       
+    padding: 20px; 
+    font-size: 10px;
+}   
+
+.modal > h2  {
+    margin-left: -5px;
+}
+
+.modal > p {
+    text-align: left;
+}
+.modal > .button {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.modal  > .button > .delete-btn {
+    /* margin-right: 10px; */
+    font-size: 10px;
+    background: red;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+    .modal > .button > .cancel-btn {
+        margin-right: 10px;
+        font-size: 10px;
+        padding: 5px 5px;
+        cursor: pointer;
+        background: grey;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .chat-wrapper > .reply-wrapper > .reply-section > .reply-content >form > button,
+    .chat-wrapper > .reply-wrapper >  .reply-section > .reply-contents >form > button,
+    .chat-wrapper > .chat2 .reply-section > .reply-contents> button,
+    .chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> button,
+    .chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form > button
+    {
+    background: blue;
+    font-size: 8px;
+    height: 20px;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    }
+
+
+
+    .chat-wrapper > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-left,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-left
+ {
+ width: 80%;
+ font-size: 10px;
+
+  
+}
+    .chat-wrapper > section > .contents > .message,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > span,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > span,
+.chat-wrapper > .chat2 > section > .contents > .message,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .message
+ {
+ /* width: 80%; */
+ font-size: 8px;
+
+  
+}
+
+.chat-wrapper > section > .contents > .top> .top-right,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-right,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-right
+ {
+ font-size: 8px;
+
+  
+}
+
+
+.chat-wrapper > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .list > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .impressions,
+.chat-wrapper > .chat2 > section > .impressions,
+.chat-wrapper > .chat2 > section > .mobile-footer > .impressions,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .impressions
+
+ {
+ 
+    color: blue;
+    height: 100%;
+    font-size: 10px;
+    font-weight: small;
+    background: #ccccdf;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form > textarea,
+.chat-wrapper > .reply-wrapper >   .reply-section > .reply-contents > form > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > form> textarea
+{
+    height: 80%;
+    font-size: 8px;
+
+}
+
+
+    }
+/* Mobile screen */
+@media screen and (max-width:425px) {
+
+     .modal  {
+        width: 50%;
+    margin-left: 20%;       
+    padding: 20px; 
+    }   
+
+    .modal > h2  {
+        margin-left: -5px;
+    }
+    
+    .modal > p {
+       text-align: left;
+    }
+    .modal > .button {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 20%;
+    }
+    .modal  > .button > .delete-btn {
+        /* margin-right: 10px; */
+        background: red;
+        color: white;
+        padding: 10px 5px;
+        font-size: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .modal > .button > .cancel-btn {
+        margin-right: 10px;
+        font-size: 5px;
+        padding: 5px 5px;
+        cursor: pointer;
+        background: grey;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    .chat-wrapper > section,
+.chat-wrapper > .reply-wrapper >  div > .list > section,
+.chat-wrapper > .reply-wrapper >  div > .last-list > section,
+ .chat-wrapper > .reply-wrapper > .reply-section, 
+.chat-wrapper >.chat2 > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > section, 
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper >.chat2ExtRep > .reply-section, 
+.chat-wrapper > .reply-wrapper >  .reply-section, 
+.chat-wrapper > .reply-section, 
+.chat-wrapper >.reply-wrapper >  .chat2-reply
+{
+    width: 90%;
+    margin-left: 5%;
+};
+.chat-wrapper >.reply-wrapper > div > .list > section > .contents,
+.chat-wrapper >.reply-wrapper > div > .last-list > section > .contents
+ {
+    width: 100%;
+    
+}
+.mobile-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.mobile-footer > .mob-top-right {
+    color: blue;
+    
+    
+}
+.mobile-footer > .impressions {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    /* height: 100%; */
+    align-items: center;
+    font-weight: bolder;
+    background: #ccccdf;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    
+}
+.mobile-footer > .impressions > .inc, 
+.mobile-footer > .impressions > .num 
+{
+   margin-right: 5px;
+    
+}
+.mobile-footer > .impressions > .inc, 
+.mobile-footer > .impressions > .dec 
+{
+   font-size: 15px;
+    
+}
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents> form 
+{
+    width: 100%;
+   
+}
+
+.chat-wrapper > .reply-wrapper >  .reply-section > .reply-content > form > textarea,
+.chat-wrapper > .reply-wrapper >   .reply-section > .reply-contents > form > textarea,
+.chat-wrapper > .chat2 > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > textarea,
+.chat-wrapper > .reply-wrapper > .chat2ExtRep-wrapper > .chat2ExtRep > .reply-section > .reply-contents > form> textarea
+{
+    width: 100%;
+}
+
+
+
+.chat-wrapper > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-left,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-left,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-left,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-left
+ {
+ width: 100%;
+  
+}
+.chat-wrapper > section > .contents > .top> .top-right,
+.chat-wrapper > .chat2 > section > .contents > .top> .top-right,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .contents > .top> .top-right
+ {
+ display: none;
+  
+}
+
+
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right > span,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right > span  
+{
+    display: flex;
+    align-items: center;
+}
+
+.chat-wrapper > .reply-wrapper > div > .list > section > .contents > .top> .top-right > span > p,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .contents > .top> .top-right > span > p
+{
+    margin-left: 1px;
+}
+
+
+.chat-wrapper > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .list > section > .impressions,
+.chat-wrapper > .reply-wrapper > div > .last-list > section > .impressions,
+.chat-wrapper > .chat2 > section > .impressions,
+.chat-wrapper >.reply-wrapper >  .chat2ExtRep-wrapper > .chat2ExtRep > section > .impressions
+
+ {
+  display: none;
+    
+    };
+
+    
+ 
+
+    
+ 
+    }
